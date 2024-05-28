@@ -1,0 +1,143 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+        <div class="sidenav">      
+            <form>        
+                <div class="group-gap">
+                    <h5 class="mb-6">Sort By</h5>            
+                    <div class="d-block my-3">
+                    <div class="custom-control custom-radio" *ngFor="let filter of filtersData;let i as index">
+                        <input [checked]="filter.selected"  (change)="onSortByValue(filter.sortBy)"  id="{{filter.name}}" type="radio" class="custom-control-input" value="{{filter.name}}" name="sort">
+                        <label class="custom-control-label" for="{{filter.name}}">{{filter.name}}</label>
+                    </div>              
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange"><h5 class="mb-6">Price ($)</h5></label>
+                    <input  type="range" min="{{priceSlider.min}}" max="{{priceSlider.max}}" (input)="priceSliderChanged($event)" class="form-control-range" id="formControlRange" onInput="$('#maxval').html('Max:' +$(this).val())">
+                    <span id="rangeval">Min:{{priceSlider.min}}</span>
+                    <span id="maxval">Max:{{priceSlider.max}}</span>
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange"><h5 class="mb-6">Booking Class</h5></label>
+                    <div *ngFor="let item of classType">
+                        <input type="checkbox" [checked]="item.checked" (change)="toggleClassType(item)">
+                        <label>{{ item.name }}</label>
+                    </div>    
+                </div>
+                <div class="form-group">
+                    <label for="formControlRange"><h5 class="mb-6">Airlines</h5></label>
+                    <div class="form-check" *ngFor="let airline of airlines">
+                        <input (change)="toggleAirLine(airline)" [checked]="airline.checked" class="form-check-input" type="checkbox" value="{{airline.name}}" id="{{airline.name}}">
+                        <label class="form-check-label" for="{{airline.name}}">
+                            <p><span style="margin-top: 10px;">{{airline.name}} <span class="imagePath arln-logo logo1" style="background-image: url({{airline.image}});"></span></span></p>
+                        </label>
+                    </div>
+                </div>  
+            </form><!-- Form ends -->
+        </div>
+    </div>
+<div class="col-md-9 main">
+    <div *ngIf="!flightList.length && dataLoaded" class="flex-container">
+        <div class="container">
+          <h1>No Data Found</h1>
+          <p class="fliCode">Sorry, but no data is available with selected filters, Please change the filters.</p>        
+        </div>        
+    </div>
+    <div class="row" *ngIf="flightList.length>0">
+      <h3>Flights from {{inputRequest.departureLocation}} to {{inputRequest.arrivalLocation}}</h3>
+    </div>
+    <table class="table table-striped" *ngIf="flightList.length > 0">     
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Flight No/ Name</th>               
+            <th scope="col">Departure</th>
+            <th scope="col">Time</th>
+            <th scope="col">Arrival</th>
+            <th scope="col">Price</th>                
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+            <tbody>
+              <tr *ngFor="let flight of flightList;let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>
+                    <span class="arln-logo logo1" style="background-image: url({{flight.image}});"></span>
+                    <div>
+                        <p class="boldFont blackText airlineName">{{flight.airline}}</p>
+                        <p class="fliCode">{{flight.flight_number}}</p>
+                    </div>                     
+                </td>
+                
+                <td>
+                  <b>{{flight.departure_time | date:'dd/MMMM/YYYY HH:mm'}}</b>
+                    <p class="fliCode">{{flight.departure_airport}}</p>
+                </td>
+                <td>    
+                    <p class="fliCode"> {{flight.duration}} Hours</p>              
+                    <div class="relative fliStopsSep"><p class="fliStopsSepLine" style="border-top: 3px solid rgb(81, 226, 194);"></p></div>
+                    <p class="holt">{{flight.holt}}</p>
+                </td>
+                <td> 
+                    <b>{{flight.arrival_time | date:'dd/MMMM/YYYY HH:mm'}} </b>
+                    <p class="fliCode">{{flight.arrival_airport}}</p>
+                </td>
+                <td>
+                    <div>                    
+                        <div class="price">Class Type:{{flight.class_type |uppercase }}</div> 
+                    </div>
+                </td>
+                <td>
+                  <button class="btn btnColor" (click)="openFlightsDetails(flight)" data-toggle="modal" data-target="#detailsModal">View Price</button>
+                  <b><p class="priceText">${{flight.price}}</p></b>
+                  <p class="fliCode">Per Person</p>
+                </td>                             
+              </tr>             
+            </tbody>
+          </table>
+      </div>    
+    </div>
+  </div>
+    <div class="modal" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModal" aria-hidden="true" [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog modal-dialog-centered" role="document" *ngIf="popupFlight" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="detailsModal">Flights Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" #modal>×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body"> 
+                    <div class="container">          
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ popupFlight.flight_number }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{ popupFlight.airline }}</h6>
+                            <span class="arln-logo logo1" style="background-image: url({{popupFlight.image}});"></span>
+                            <p class="card-text"><b>Departure Airport: </b> : {{ popupFlight.departure_airport }}</p>
+                            <p class="card-text"><b>Departure Time: </b> {{ popupFlight.departure_time | date:'dd/MMMM/YYYY HH:mm' }}
+                            <b>Arrival Airport: </b> {{ popupFlight.arrival_airport }}
+                            <p class="card-text"><b>Arrival Time: </b> {{ popupFlight.arrival_time | date:'dd/MMMM/YYYY HH:mm' }}
+                            <b>Duration: </b>{{ popupFlight.duration }} Hours</p>
+                            
+                            <p class="card-text"><b>Price: $ </b> {{ popupFlight.price }}
+                            <b>Seats Available: </b> {{ popupFlight.seats_available }}</p>
+                        </div>
+                        </div>
+                    </div>  
+                </div>        
+            </div>
+            <div class="modal-footer"> 
+                <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" #modal>Close</span>
+                  </button>
+              <button type="button" class="btn btn-primary" (click)="booking()"> Book Flight </button> 
+            </div> 
+          </div>
+        </div>
+      </div>
+
+  
+  

@@ -1,0 +1,41 @@
+ /* You can add global styles to this file, and also import other style files */
+
+.cneterAdded{
+	justify-content: center;
+    display: flex;
+}
+.section .section-center {
+	background-color: #ccc;
+	min-height: 100px;
+	overflow: hidden;
+}
+#booking {
+	font-family: 'PT Sans', sans-serif;
+	background-color: aquamarine;
+	background-size: cover;
+	background-position: center;   
+}
+.booking-form {
+	background: rgba(127, 205, 228, 0.7);
+	padding: 60px;
+	border-radius: 10px;
+	min-height: 500px;
+	overflow: hidden;
+}
+.booking-form .form-group {
+	position: relative;	
+}
+
+.booking-form .form-control {
+	background-color: #fff;
+	height: 50px;
+	color: #1b3dc8;
+	border: none;
+	font-size: 16px;
+	font-weight: 40px;
+	text-align: center;
+	-webkit-box-shadow: none;
+	box-shadow:blue;
+	border-radius: 40px;
+	padding: 0px 25px;
+}

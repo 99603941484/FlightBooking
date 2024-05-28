@@ -1,0 +1,85 @@
+.price {
+padding: 0px;
+display: block;
+margin: 5px;
+width: 114px;
+}
+.flex-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10%;ontent: center;
+}
+.btnColor{
+background-color: #563d7c;
+color: #fff;
+}
+.arln-logo, .multiairline {
+width: 32px;
+height: 32px;
+display: block;
+background-position: 50%;
+background-size: contain;
+background-repeat: no-repeat;
+flex-shrink: 0;
+}
+.blackText {
+color: #000000;
+}
+.airlineName {
+width: 100px;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+}
+.fliCode {
+color: #878787;
+font-size: calc(var(--font-scale, 1)*11px);
+}
+.holt{
+font-size: 10px;
+}
+.sortby{
+background-color:#c5f498;
+padding: 10px;
+}
+mat-slider {
+width: 300px;
+}
+.sidenav {
+background: #eee;
+padding: 10px;
+}
+.sidenav a {
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 15px;
+color: #2196F3;
+display: block;
+}
+.priceText{
+color: #000;
+font-size: 14px;
+}
+.imagePath{
+height: 15px;
+width: 15px;
+position: relative;
+left: 124px;
+margin-top: -16px;
+}
+.sidenav a:hover {
+color: #064579;
+}
+.main {
+/* Same width as the sidebar + left position in px */
+font-size: 12px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+#maxval{
+    float: right;
+}

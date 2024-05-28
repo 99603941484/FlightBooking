@@ -1,0 +1,484 @@
+{
+    "userDetails":[{
+        "email":"vikas.kale12@gmail.com",
+        "userRole":"Customer",
+        "name":"Vikas Kale",
+        "address":"Pune",
+        "phone":"9960394184",
+        "password":"123456",
+        "token":"DFKJSKDFJKDSJFIFJSDKJFKSDJFKDSJFKSDFJSKDFSD"
+    }],
+   "sortBy": [
+        {
+          "name":"Price (Low to High)",
+          "sortBy":"pricelow",
+          "selected":true
+        },
+        {
+          "name":"Price (High to Low)",
+          "sortBy":"pricehigh",
+          "selected":false
+        },
+        {
+          "name":"Duration (Low to High)",
+          "sortBy":"durationlow",
+          "selected":false
+        },
+        {
+          "name":"Duration (High to Low)",
+          "sortBy":"durationhigh",
+          "selected":false
+        },
+        {
+          "name":"AirLine(A to Z)",
+          "sortBy":"airlinea",
+          "selected":false
+        },
+        {
+          "name":"AirLine(Z to A)",
+          "sortBy":"airlinez",
+          "selected":false
+        }
+      ] ,
+    "airport":[        
+            {
+                "airportCode": "DEL",
+                "airportName": "Indira Gandhi International Airport",
+                "city": "New Delhi"
+            },
+            {
+                "airportCode": "BOM",
+                "airportName": "Chhatrapati Shivaji Maharaj International Airport",
+                "city": "Mumbai"
+            },
+            {
+                "airportCode": "BLR",
+                "airportName": "Kempegowda International Airport",
+                "city": "Bangalore"
+            },
+            {
+                "airportCode": "MAA",
+                "airportName": "Chennai International Airport",
+                "city": "Chennai"
+            },
+            {
+                "airportCode": "HYD",
+                "airportName": "Rajiv Gandhi International Airport",
+                "city": "Hyderabad"
+            },
+            {
+                "airportCode": "CCU",
+                "airportName": "Netaji Subhas Chandra Bose International Airport",
+                "city": "Kolkata"
+            },
+            {
+                "airportCode": "COK",
+                "airportName": "Cochin International Airport",
+                "city": "Kochi"
+            },
+            {
+                "airportCode": "GOI",
+                "airportName": "Goa International Airport",
+                "city": "Goa"
+            },
+            {
+                "airportCode": "AMD",
+                "airportName": "Sardar Vallabhbhai Patel International Airport",
+                "city": "Ahmedabad"
+            },
+            {
+                "airportCode": "PNQ",
+                "airportName": "Hyderabad International Airport",
+                "city": "Pune"
+            },
+            {
+                "airportCode": "SXR",
+                "airportName": "Sheikh ul-Alam International Airport",
+                "city": "Srinagar"
+            },
+            {
+                "airportCode": "JAI",
+                "airportName": "Jaipur International Airport",
+                "city": "Jaipur"
+            },
+            {
+                "airportCode": "LKO",
+                "airportName": "Chaudhary Charan Singh International Airport",
+                "city": "Lucknow"
+            },
+            {
+                "airportCode": "NAG",
+                "airportName": "Dr. Babasaheb Ambedkar International Airport",
+                "city": "Nagpur"
+            },
+            {
+                "airportCode": "TRV",
+                "airportName": "Trivandrum International Airport",
+                "city": "Thiruvananthapuram"
+            },
+            {
+                "airportCode": "IXC",
+                "airportName": "Chandigarh International Airport",
+                "city": "Chandigarh"
+            },
+            {
+                "airportCode": "VNS",
+                "airportName": "Lal Bahadur Shastri Airport",
+                "city": "Varanasi"
+            },
+            {
+                "airportCode": "PAT",
+                "airportName": "Jay Prakash Narayan International Airport",
+                "city": "Patna"
+            },
+            {
+                "airportCode": "BBI",
+                "airportName": "Biju Patnaik International Airport",
+                "city": "Bhubaneswar"
+            },
+            {
+                "airportCode": "IXB",
+                "airportName": "Bagdogra International Airport",
+                "city": "Bagdogra"
+            }
+        ],
+    "airlines": [
+    {
+    "code": "AA",
+    "name": "American Airlines",
+    "country": "United States",
+    "fleet_size": 876,
+    "hub": "Dallas/Fort Worth International Airport",
+    "website": "https://www.aa.com"
+    },
+    {
+    "code": "DL",
+    "name": "Delta Air Lines",
+    "country": "United States",
+    "fleet_size": 889,
+    "hub": "Hartsfield–Jackson Atlanta International Airport",
+    "website": "https://www.delta.com"
+    },
+    {
+    "code": "UA",
+    "name": "United Airlines",
+    "country": "United States",
+    "fleet_size": 808,
+    "hub": "Chicago O'Hare International Airport",
+    "website": "https://www.united.com"
+    },
+    {
+    "code": "BA",
+    "name": "British Airways",
+    "country": "United Kingdom",
+    "fleet_size": 276,
+    "hub": "London Heathrow Airport",
+    "website": "https://www.britishairways.com"
+    }            
+    ],
+
+"flights":[
+{            
+"flight_number": "ABC123","holt":"Non Stop","class_type":"economy","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T08:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:00:00","duration": 3,"price": 250,"seats_available": 50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","economy":50,"business":60,"cabin":90
+},
+{
+"flight_number": "XYZ456","holt":"Non Stop","class_type":"economy","airline": "Indigo Airlines","departure_airport": "Pune","departure_time": "2024-05-19T12:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T15:00:00","duration": 4,"price": 270,"seats_available": 30,"economy":50,"business":60,"cabin":90,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=19"
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 5,"price": 1445,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","business":60,"cabin":90
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Vistra Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 4,"price": 34445,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/UK.png?v=19",
+"business":60,"cabin":90},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"cabin","airline": "Air India Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 1,"price": 3456,"seats_available": 20,"economy":50,
+"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/AI.png?v=19",
+"business":60,"cabin":90
+},
+{            
+"flight_number": "ABC123","holt":"Non Stop","class_type":"cabin","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T08:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:00:00","duration": 3,"price": 4567,"seats_available": 50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","economy":50,"business":60,"cabin":90
+},
+{
+"flight_number": "XYZ456","holt":"Non Stop","class_type":"cabin","airline": "Indigo Airlines","departure_airport": "Pune","departure_time": "2024-05-19T12:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T15:00:00","duration": 3,"price": 5675,"seats_available": 30,"economy":50,"business":60,"cabin":90,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=19"
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration":5,"price": 5655,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","business":60,"cabin":90
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Vistra Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 5556,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/UK.png?v=19",
+"business":60,"cabin":90},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Air India Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 34343,"seats_available": 20,"economy":50,
+"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/AI.png?v=19",
+"business":60,"cabin":90
+},
+{            
+"flight_number": "ABC123","holt":"Non Stop","class_type":"business","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T08:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:00:00","duration": 3,"price": 66767,"seats_available": 50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","economy":50,"business":60,"cabin":90
+},
+{
+"flight_number": "XYZ456","holt":"Non Stop","class_type":"business","airline": "Indigo Airlines","departure_airport": "Pune","departure_time": "2024-05-19T12:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T15:00:00","duration": 3,"price": 3433,"seats_available": 30,"economy":50,"business":60,"cabin":90,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=19"
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"cabin","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 4345,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","business":60,"cabin":90
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"cabin","airline": "Vistra Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 5567,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/UK.png?v=19",
+"business":60,"cabin":90},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"cabin","airline": "Air India Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 7676,"seats_available": 20,"economy":50,
+"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/AI.png?v=19",
+"business":60,"cabin":90
+},
+{            
+"flight_number": "ABC123","holt":"Non Stop","class_type":"cabin","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T08:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:00:00","duration": 3,"price": 8786,"seats_available": 50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","economy":50,"business":60,"cabin":90
+},
+{
+"flight_number": "XYZ456","holt":"Non Stop","class_type":"cabin","airline": "Indigo Airlines","departure_airport": "Pune","departure_time": "2024-05-19T12:00:00","arrival_airport": "Goa","arrival_time": "2024-05-19T15:00:00","duration": 3,"price": 34343,"seats_available": 30,"economy":50,"business":60,"cabin":90,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=19"
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "SpiceJet Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 3232,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/SG.png?v=19","business":60,"cabin":90
+},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Vistra Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 1231,"seats_available": 20,"economy":50,"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/UK.png?v=19",
+"business":60,"cabin":90},
+{
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Air India Airlines","departure_airport": "Pune","departure_time": "2024-05-19T09:30:00","arrival_airport": "Goa","arrival_time": "2024-05-19T11:30:00","duration": 7,"price": 3232,"seats_available": 20,"economy":50,
+"image":"https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/AI.png?v=19",
+"business":60,"cabin":90
+},
+
+{
+"departure_airport": "Pune","arrival_airport": "Goa","duration": 7,
+"seats_available": 54,"price": 3232,"business":43,"cabin":76,"economy":76,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Mumbai","duration": 8,
+"seats_available": 20,"price": 4545,"business":44,"cabin":76,"economy":76,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Mumbai","arrival_airport": "Goa","duration": 8,
+"seats_available": 20,"price": 200,"business":54,"cabin":76,"economy":76,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Mumbai","arrival_airport": "Goa","duration": 8,
+"seats_available": 20,"price": 34,"business":5,"cabin":66,"economy":76,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Mumbai","arrival_airport": "Goa","duration": 8,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Mumbai","arrival_airport": "Pune","duration": 8,
+"seats_available": 20,"price": 200,"business":77,"cabin":98,"economy":33,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Mumbai","arrival_airport": "Srinagar","duration": 9,
+"seats_available": 20,"price": 200,"business":44,"cabin":45,"economy":77,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Mumbai","arrival_airport": "Jaipur","duration": 9,
+"seats_available": 20,"price": 200,"business":43,"cabin":22,"economy":11,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"economy","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Mumbai","arrival_airport": "Delhi","duration": 9,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Delhi","arrival_airport": "Goa","duration": 9,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Goa","duration": 12,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Delhi","arrival_airport": "Goa","duration": 12,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Delhi","arrival_airport": "Goa","duration": 12,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Delhi","arrival_airport": "Mumbai","duration": 12,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Delhi","arrival_airport": "Pune","duration": 5,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Goa","duration": 5,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Bangalore","arrival_airport": "Goa","duration": 5,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Bangalore","arrival_airport": "Mumbai","duration": 5,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"business","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Bangalore","arrival_airport": "Delhi","duration": 5,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Bangalore","arrival_airport": "Pune","duration": 3,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Bangalore","arrival_airport": "Goa","duration": 3,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Jaipur","duration": 3,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Srinagar","duration": 3,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Delhi","arrival_airport": "Srinagar","duration": 3,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Srinagar","duration": 2,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Nagpur","arrival_airport": "Goa","duration": 2,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Nagpur","arrival_airport": "Goa","duration": 2,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Nagpur","arrival_airport": "Delhi","duration": 2,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Nagpur","arrival_airport": "Mumbai","duration": 2,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Banglore","duration": 2,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Chennai","arrival_airport": "Goa","duration": 34,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Chennai","arrival_airport": "Goa","duration": 34,
+"seats_available": 20,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Chennai","arrival_airport": "Goa","duration": 34,
+"seats_available": 20,"price": 200,"business":54,"cabin":54,"economy":33,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Chennai","arrival_airport": "Banglore","duration": 34,
+"seats_available": 20,"price": 200,"business":4,"cabin":55,"economy":44,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Chennai","arrival_airport": "Delhi","duration": 34,
+"seats_available": 320,"price": 200,"business":45,"cabin":54,"economy":55,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Chennai","arrival_airport": "Pune","duration": 34,
+"seats_available": 320,"price": 200,"business":60,"cabin":54,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Chennai","arrival_airport": "Goa","duration": 34,
+"seats_available": 320,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Kochi","arrival_airport": "Goa","duration": 34,
+"seats_available": 265,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Kochi","arrival_airport": "Delhi","duration": 34,
+"seats_available": 265,"price": 200,"business":3,"cabin":55,"economy":55,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Kochi","arrival_airport": "Pune","duration": 34,
+"seats_available": 265,"price": 200,"business":6,"cabin":6,"economy":33,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Kochi","arrival_airport": "Banglore","duration": 34,
+"seats_available": 34,"price": 200,"business":54,"cabin":33,"economy":33,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Kochi","arrival_airport": "Mumbai","duration": 34,
+"seats_available": 34,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Kochi","arrival_airport": "Srinagar","duration": 34,
+"seats_available": 34,"price": 200,"business":60,"cabin":44,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Pune","arrival_airport": "Hyderabad","duration": 2,
+"seats_available": 23,"price": 200,"business":60,"cabin":90,"economy":50,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Hyderabad","arrival_airport": "Goa","duration": 2,
+"seats_available": 23,"price": 200,"business":778,"cabin":8,"economy":87,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+},
+{
+"departure_airport": "Hyderabad","arrival_airport": "Pune","duration": 2,
+"seats_available": 23,"price": 200,"business":87,"cabin":7,"economy":87,
+"flight_number": "PQR789","holt":"Non Stop","class_type":"Any","airline": "Akash Airlines","departure_time": "2024-05-19T09:30:00","arrival_time": "2024-05-19T11:30:00","image":"https://imgak.mmtcdn.com/flights/assets/media/dt/listing/departure.png" 
+}
+              
+]
+        
+    
+}
